@@ -34,12 +34,19 @@ let productBin = {
     ],
     "message": "success"
   }
+
+  let QuantityTotal = 0;
+  let i = 0;
+
+for (i ; i<productBin.data.length; i++){
+    QuantityTotal = QuantityTotal + productBin.data[i].quantity
+}
+
+console.log(QuantityTotal);
+
+
+
+
   
-  let totalQuantity = 0;
-  
-  for (let i = 0; i < productBin.data.length; i++) {
-      totalQuantity += productBin.data[i].quantity;
-  }
-  
-  console.log(totalQuantity);
+
   
