@@ -38,11 +38,15 @@ let productBin = {
   let QuantityTotal = 0;
   let i = 0;
 
+  console.log("-------FloBrand-DressBSPink-------")
+
 for (i ; i<productBin.data.length; i++){
+    console.log("Quantity In Storage " + productBin.data[i].storageId + ": " + productBin.data[i].quantity)
     QuantityTotal = QuantityTotal + productBin.data[i].quantity
 }
 
-console.log(QuantityTotal);
+console.log("-------------------------------------")
+console.log("Total Quantity :" +QuantityTotal)
 
 
 
